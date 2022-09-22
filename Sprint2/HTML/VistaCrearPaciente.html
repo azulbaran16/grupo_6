@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="stylevistas.css">
+
+    <title>Crear Pacientes</title>
+
+</head>
+<body>
+    <div class="container">
+        <header>Crear Pacientes</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title"></span>
+
+                    <div class="campos">
+                        <div class="entrada-campos">
+                            <label>Tipo Documento</label>
+                            <input list="tipoDocumento" placeholder="Seleccione Tipo documento">
+                            <datalist id="tipoDocumento">
+                                <option>Tarjeta de Identidad</option>
+                                <option>Cédula</option>
+                                <option>Otro</option>
+                            </datalist>
+                        </div>
+                        <div class="entrada-campos">
+                            <label>*No. Documento</label>
+                            <input type="number" placeholder="Ingrese Identificacion" required>
+                        </div>
+                        <div class="entrada-campos">
+                            <label>Usuario</label>
+                            <input type="text" placeholder="Ingrese Usuario" required>
+                        </div>
+                        <div class="entrada-campos">
+                            <label>Contraseña</label>
+                            <input type="password" placeholder="Ingrese Contraseña" required>
+                        </div>
+                        <div class="entrada-campos">
+                            <label>Apellido 1</label>
+                                <input type="text" placeholder="Ingrese Primer Apellido" required>
+                        </div>
+                        <div class="entrada-campos">
+                            <label>Apellido 2</label>
+                            <input type="text" placeholder="Ingrese Segundo Apellido" required>
+                        </div>
+                        <div class="entrada-campos">
+                            <label>Nombre 1</label>
+                            <input type="text" placeholder="Ingrese Primer Nombre" required>
+                        </div>
+                        <div class="entrada-campos">
+                            <label>Nombre 2</label>
+                            <input type="text" placeholder="Ingrese Segundo Nombre" required>
+                        </div>
+                        <div class="entrada-campos">
+                            <label>Sexo</label>
+                            <input list="sexo" placeholder="Seleccione sexo">
+                            <datalist id="sexo">
+                                <option>Femenino</option>
+                                <option>Masculino</option>
+                            </datalist>
+                        </div>
+                        <div class="entrada-campos">
+                            <label>Fecha Nacimiento</label>
+                            <input type="date" placeholder="Ingrese Fecha Nacimiento" required>
+                        </div>
+                        <div class="entrada-campos">
+                            <label>Dirección</label>
+                            <input type="text" placeholder="Ingrese Direccion" required>
+                        </div>
+                        <div class="entrada-campos">
+                            <label>Teléfono</label>
+                            <input type="number" placeholder="Ingrese telefono" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <header></header>
+            <div class="rolpaciente">
+                <label>Rol</label>
+                    <input list="rolpaciente" placeholder="Seleccione Rol">
+                    <datalist id="rolpaciente">
+                        <option>Sura</option>
+                        <option>S.O.S</option>
+                        <option>Medimas</option>
+                        <option>Salud Total</option>
+                        <option>Sanitas</option>
+                    </datalist>
+            </div>
+            <header></header>
+            <div class="estadopaciente">
+                <label>Estado</label>
+                            <input list="estadopaciente" placeholder="Seleccione Estado">
+                            <datalist id="estadopaciente">
+                                <option>Activo</option>
+                                <option>Inactivo</option>
+                            </datalist>
+            </div>
+            <div class="guardarpaciente">
+            <input type="button" value="Guardar" id="guardarpaciente">
+            </div>
+            <div class="salirpaciente">
+            <input type="button" value="salir" id="salirpaciente">
+            </div>
+            <br>
+            <br>
+            <p><strong>Nota: El Nro. de documento no es modificable des pues de ser registrado en el sistema</p>
+        </form>
+
+    </div>
+
+
+</body>
+</html>
