@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+.textoJ {
+	text-align: justify;
+}
+
+.Tarticulos{
+	text-align: center;
+	margin-top: 80px;
+}
+
+.Particulos{
+	text-align: center ;
+	margin-top: auto;
+}
+
+.col-sm{
+	margin-top: 30px;
+	
+}
+
+.col mb-3 {
+	padding: 60px;
+	margin: 60px;
+}
+
+.row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top {
+	margin: 60px;
+	padding: 60px;
+}

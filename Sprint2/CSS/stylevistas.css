@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(123, 185, 247);
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+}
+
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: 333;
+}
+
+.container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px ;
+    background-color: f2f2f2;
+}
+
+.container form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+}
+
+.container form .details{
+    margin-top: 30px;
+}
+
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: 333;
+}
+
+.container form .campos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .campos .entrada-campos{
+    display: flex;
+    width: calc(80% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.entrada-campos label{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.entrada-campos input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.entrada-campos input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+header .especialidad {
+    height: 0 15px;
+    margin: 15px 0;
+}
+
+.especialidad{
+    width: 900px;
+    margin: 15px 0;
+}
+
+.especialidad select{
+    width: 20%;
+    border: 1px solid #aaa;  
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+header .rol {
+    height: 0 80px;
+    margin: 15px 0;
+}
+
+.rol{
+    position: relative;
+    top: -80px;
+    width: 900px;
+    left: 250px;
+    margin: 15px 0;
+}
+
+header .estado {
+    height: 0 80px;
+    margin: 15px 0;
+}
+
+.estado{
+    position: relative;
+    top: -70px;
+    width: 900px;
+    left: 250px;
+    margin: 15px 0;
+}
+
+header .firma {
+    height: 0 80px;
+    margin: 15px 0;
+}
+
+.firma{
+    position: relative;
+    top: -162px;
+    width: 900px;
+    left: 550px;
+    margin: 15px 0;
+    
+}
+
+.firma input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 70px;
+    margin: 8px 0;
+}
+
+.firma label{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.entrada-campos input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.guardar{
+    position: relative;
+    top: -150px;
+    width: 900px;
+    left: 550px;
+    margin: 15px 0;
+    justify-content: center;
+    max-width: 400;
+    outline: none;
+    
+}
+
+.salir{
+    display: flex;
+    position: relative;
+    top: -150px;
+    width: 900px;
+    left: 550px;
+    margin: 15px 0;
+}
+
+.nota {
+    position: relative;
+    top: -80px;
+    width: 900px;
+    left: 10px;
+    margin: 15px 0;
+}
+/**  Da estilo a HTML vista crear paciente  */
+
+header .rolpaciente {
+    height: 0 200px;
+    margin: 15px 0;
+}
+
+.rolpaciente{
+    position: relative;
+    top: 15px;
+    width: 900px;
+    left: 5px;
+    margin: 15px 0;
+}
+
+header .estadopaciente {
+    height: 0 200px;
+    margin: 15px 0;
+}
+
+.estadopaciente{
+    position: relative;
+    top: 30px;
+    width: 900px;
+    left: 5px;
+    margin: 15px 0;
+}
+
+.guardarpaciente{
+    position: relative;
+    top: -40px;
+    width: 900px;
+    left: 550px;
+    margin: 15px 0;
+    justify-content: center;
+    max-width: 400;
+    outline: none;
+    
+}
+
+.salirpaciente{
+    display: flex;
+    position: relative;
+    top: -25px;
+    width: 900px;
+    left: 550px;
+    margin: 15px 0;
+}
+
+/**  Da estilo a HTML vista registro pacientes  */
+
+.guardar-registropaciente{
+    position: relative;
+    top: -15px;
+    width: 900px;
+    left: 550px;
+    margin: 15px 0;
+    justify-content: center;
+    max-width: 400;
+    outline: none;
+    
+}
+
+.salir-registropaciente{
+    display: flex;
+    position: relative;
+    top: 0px;
+    width: 900px;
+    left: 550px;
+    margin: 15px 0;
+}
+
+/**  Da estilo a HTML vista gestionar citas admon  */
+
+.container form .area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container form .especialidad{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0;
+    color: 333;
+}
+
+.tabla, th, td {
+    position: relative;
+    border: 1px solid rgb(119, 116, 116);
+    border-collapse: collapse;
+    width: 350px;
+    text-align: left;
+}
+
+td{
+    font-weight: 8px ; 
+}
+
+th, td{
+    text-align: center;
+    color: #333;
+    height: 25px;
+}
+
+.actualizar{
+    display: flex;
+    position: relative;
+    top: 115px;
+    width: 900px;
+    left: 10px;
+    margin: 15px 0;
+}
+
+img{
+    position: relative;
+    top: 55px;
+    width: 350px;
+    border: solid rgb(119, 116, 116);
+    border-radius: 5px;
+}
+
+.comentario{
+    display: flex;
+    position: relative;
+    top: 90px;
+    width: 900px;
+    left: 10px;
+    margin: 15px 0;
+}
+
+.agenda{
+    position: relative;
+    width: 400px;
+    top: -450px;
+    left: 400px;
+    margin: 15px 0;
+    height: 120px;
+ }
+
+/**  Da estilo a HTML a la agenda medicos  */
+
+td .editorDemoTable{
+    height: 8px;
+}
+
+.agendamedicos{
+    position: relative;
+    width: 400px;
+    top: -450px;
+    left: 400px;
+    margin: 15px 0;
+    height: 120px;
+ }
+
+ .btnsalirgcadmon{
+     height: 0px;
+ }
+
+.btnsalirgcadmon button {
+    background-color:rgb(43, 70, 160);
+    border: 2px solid rgb(43, 70, 160);
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    position: relative;
+    padding: 10px;
+    width: 120px;
+    top: -80px;
+    left: 650px;
+    margin: 15px 0;
+}
+
+
+
+/**  Da estilo a HTML a vista pacientes  */
+
+.profesional input{
+    width: 200px;
+}
+
+.calendario-paciente img{
+    top: -20px;
+}
+
+.comentario input{
+    height: 30px;
+}
